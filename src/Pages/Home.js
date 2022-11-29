@@ -1,6 +1,6 @@
-import Header from '../components/HeaderMain.js'
+import Header from '../Components/HeaderMain.js'
 import * as React from "react";
-import Navigation from "../components/Navigation";
+import Navigation from "../Components/Navigation";
 
 export const Home = () => {
     return (

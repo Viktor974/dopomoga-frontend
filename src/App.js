@@ -7,10 +7,12 @@ import Home from "./Pages/Home.js";
 function App() {
     return (
         <Routes>
-            <Route path="/main" element={<MainPage/>}/>
+            <Route path="/" element={<MainPage/>}/>
             <Route path="/home" element={<Home/>}/>
             <Route path="/reg" element={<Singup/>}/>
             <Route path="/login" element={<Login/>}/>
+            <Route path="/add-post" element={<Login/>}/>
+            <Route path="/donate" element={<Login/>}/>
         </Routes>
     );
 }

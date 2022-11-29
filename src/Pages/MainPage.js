@@ -1,8 +1,8 @@
-import Header from '../components/Header.js'
-import Footer from '../components/Footer.js'
-import Main from '../components/MainPage.js'
-import img1 from "../components/svg/img.svg";
-import img2 from "../components/svg/text2.svg";
+import Header from '../Components/Header.js'
+import Footer from '../Components/Footer.js'
+import Main from '../Components/MainPage.js'
+import img1 from "../Components/svg/img.svg";
+import img2 from "../Components/svg/text2.svg";
 import * as React from "react";
 
 export const MainPage = () => {

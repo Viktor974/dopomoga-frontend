@@ -300,3 +300,10 @@ img {
     width: 100%;
     height: auto;
 }
+.cen{
+    margin: auto 0;
+}
+.bot{
+    height: 48px;
+    width: 441px;
+}
