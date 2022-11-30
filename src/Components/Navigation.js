@@ -14,25 +14,27 @@ import volunteers from './svg/volunteers.svg'
 import './index.css'
 const Navigation = () =>{
     return (
-        <nav className="center nav-menu m-t-f m-l-10">
+        <nav className="center nav-menu m-t-f m-l-10 t-none con-l">
             <ul>
-                <li><a href="/"><span>Мій профіль</span> </a> </li>
 
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={people}/></div><span>Мої друзі</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={notification}/></div><span>Мої сповіщення </span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={groups}/></div><span>Мої групи</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={news}/></div><span>Події</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={history}/></div><span>Історія</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={selected}/></div><span>Обране</span> </a> </li>
-
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={volunteers}/></div><span>Волонтери</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={organization}/></div><span>Благодійні
-                                                    організації</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={projects}/></div><span>Проєкти</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={childrendreams}/></div><span>Мріють діти</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={bank}/></div><span>Банка</span> </a> </li>
-                <li><a className="text-menu" href="/"><div className="img-nav"><img alt="" src={faq}/></div><span>FAQ</span> </a> </li>
-            </ul>
+                <li className="t-d-none"><a href="/"><span>Мій профіль</span> </a> </li>
+                <div className="line"></div>
+                <div className="con-l">
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img className="menu" alt="" src={people}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img className="menu" alt="" src={notification}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img className="menu" alt="" src={groups}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img className="menu" alt="" src={news}/></div></a></li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img className="menu" alt="" src={history}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img className="menu" alt="" src={selected}/></div></a> </li>
+                <div className="line"></div>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img  className="menu" alt="" src={volunteers}/></div> </a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img  className="menu-org" alt="" src={organization}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img  className="menu" alt="" src={projects}/></div> </a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img  className="menu" alt="" src={childrendreams}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img  className="menu" alt="" src={bank}/></div></a> </li>
+                <li><a className="text-menu flex m-t-5t" href="/"><div className="img-nav m-r-5t"><img  className="menu" alt="" src={faq}/></div> </a> </li>
+                </div>
+                </ul>
         </nav>
     );
 }

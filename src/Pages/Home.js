@@ -4,7 +4,7 @@ import Navigation from "../Components/Navigation";
 
 export const Home = () => {
     return (
-        <body className="page">
+        <body className="page bg-c-grey">
         <Header/>
         <Navigation/>
         </body>

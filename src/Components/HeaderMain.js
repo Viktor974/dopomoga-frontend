@@ -1,60 +1,50 @@
-import logo from './logo.svg';
 import * as React from "react";
 import {Link} from "react-router-dom";
-import {useState} from "react";
 import "./index.css"
-import Login from "../modal/login.js";
+
+import logo from './logo.svg';
+import language from './svg/lg-ua.svg';
+import notify from './svg/notification-main.svg';
+import logout from './svg/logout.svg';
 
 const Header = () => {
-    const [modalActive, setModalActive] = useState(false)
     return (
         <div>
-            <Login active={modalActive} setActive={setModalActive}/>
-            <header>
-                <div className="header bg-2d ">
-                    <div className="m-l-100t m-t-5t">
-                        <div className="hw-c m-a">
-                            <Link to="/main">
+            <div className="header bg-2d ">
+                <div className="m-l-100t m-t-5t">
+                    <div className=" m-a">
+                        <Link to="/main">
                             <img src={logo} className="logo" alt="logo"/>
-                            </Link>
-                        </div>
-                        <div>
-                            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 search flex" role="search">
-                                <input type="search" className="form-control" placeholder="Search..."
-                                       aria-label="Search"/>
-                                <div className="hw-c">
-                                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path className="s-path"
-                                              d="M28 27L22.6358 21.5354C24.7694 19.4072 26.021 16.601 26.1546 13.6456C26.2883 10.6902 25.2949 7.78979 23.3615 5.49103C21.4282 3.19227 18.6885 1.65395 15.6588 1.16601C12.6292 0.678078 9.51882 1.27423 6.91403 2.84211C4.30923 4.40998 2.38991 6.84128 1.51781 9.67775C0.645707 12.5142 0.881074 15.5599 2.17954 18.2408C3.47801 20.9218 5.7499 23.0527 8.56699 24.2319C11.3841 25.4112 14.5518 25.5574 17.4731 24.643"
-                                              stroke="#757575" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-
-                            </form>
-                        </div>
+                        </Link>
                     </div>
-                    <div className="col-md-3">
-                        <div className="language center">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.8183 8.3205C12.9673 2.77688 11.4842 0.671056 6.82628 0.759175C5.16692 0.789678 5.56457 -0.327631 4.29911 0.0960202C3.03614 0.519671 4.12029 1.1399 2.82732 2.09904C-0.801509 4.7912 -0.467637 7.28114 1.21548 13.2156C1.92449 15.7158 -0.493897 15.8378 0.462703 18.2599C1.16171 20.0268 6.31359 20.7668 11.7481 18.9457C17.1838 17.1234 20.6088 13.5071 19.9098 11.7402C18.9532 9.31693 17.02 10.6545 15.8183 8.3205ZM11.1591 17.4522C6.30484 19.079 2.31588 18.1232 2.14707 17.6973C1.85696 16.963 3.71389 14.516 9.26342 12.6553C14.8129 10.7946 17.9103 11.4849 18.2342 12.3039C18.4255 12.7886 16.0146 15.8242 11.1591 17.4522ZM9.59854 13.5049C7.06136 14.3555 5.29822 15.3283 4.1553 16.2038C4.95935 16.8636 6.4649 17.024 7.96419 16.5213C9.87364 15.883 11.0478 14.4132 10.5839 13.2405L10.5639 13.1998C10.25 13.2925 9.92866 13.393 9.59854 13.5049Z"
-                                    fill="#757575"/>
-                            </svg>
-                        </div>
-                        <div className="language">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20" cy="20" r="20" fill="white"/>
-                                <path
-                                    d="M16.7344 13.625H19.0703V21.1406C19.0703 22.0156 18.8828 22.7526 18.5078 23.3516C18.138 23.9505 17.625 24.401 16.9688 24.7031C16.3177 25.0052 15.5677 25.1562 14.7188 25.1562C13.8698 25.1562 13.1146 25.0052 12.4531 24.7031C11.7969 24.401 11.2812 23.9505 10.9062 23.3516C10.5365 22.7526 10.3516 22.0156 10.3516 21.1406V13.625H12.6953V21.1406C12.6953 21.651 12.776 22.0677 12.9375 22.3906C13.099 22.7135 13.3307 22.9505 13.6328 23.1016C13.9401 23.2526 14.3021 23.3281 14.7188 23.3281C15.1458 23.3281 15.5078 23.2526 15.8047 23.1016C16.1068 22.9505 16.3359 22.7135 16.4922 22.3906C16.6536 22.0677 16.7344 21.651 16.7344 21.1406V13.625ZM25.4531 15.5703L22.3594 25H19.8672L24.0938 13.625H25.6797L25.4531 15.5703ZM28.0234 25L24.9219 15.5703L24.6719 13.625H26.2734L30.5234 25H28.0234ZM27.8828 20.7656V22.6016H21.875V20.7656H27.8828Z"
-                                    fill="#757575"/>
-                            </svg>
-                        </div>
+                    <div>
+                        <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 search flex" role="search">
+                            <input type="search" className="form-control" placeholder="Пошук"
+                                   aria-label="Search"/>
+                            <div className="hw-c">
+                                <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path className="s-path"
+                                          d="M28 27L22.6358 21.5354C24.7694 19.4072 26.021 16.601 26.1546 13.6456C26.2883 10.6902 25.2949 7.78979 23.3615 5.49103C21.4282 3.19227 18.6885 1.65395 15.6588 1.16601C12.6292 0.678078 9.51882 1.27423 6.91403 2.84211C4.30923 4.40998 2.38991 6.84128 1.51781 9.67775C0.645707 12.5142 0.881074 15.5599 2.17954 18.2408C3.47801 20.9218 5.7499 23.0527 8.56699 24.2319C11.3841 25.4112 14.5518 25.5574 17.4731 24.643"
+                                          stroke="#757575" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
-            </header>
+                <div className="col-md-3">
+                    <div className="language">
+                        <img src={notify} className="img-nav m-a center" alt=""/>
+                    </div>
+                    <div className="language">
+                        <img src={language} alt=""/>
+                    </div>
+                    <div className="language">
+                        <img src={logout} alt=""/>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
