@@ -2,20 +2,29 @@
     background-color: #2D7581;
 }
 .header{
-    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 60pt;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
-
+.likeheader{
+    width: 100%;
+    height: 60pt;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 .header div{
     display: flex;
     position: center;
 }
 .text-logo{
     font-size: 40px;
-    font-family: Fantasy;
     text-shadow: 1px 3px 5px #757575;
     color: white;
 }
@@ -23,12 +32,13 @@
     margin-top: 5pt;
 }
 .m-l-100t{
-    margin-left: 100pt;
+    margin-left: 158pt;
 }
 .search{
+    padding: 0 160pt 0 0;
     margin-top: 10pt;
     margin-left: 20pt;
-    width: 700px;
+    width: 80%;
     height: 40px;
     text-decoration: none;
     font-size: 12pt;

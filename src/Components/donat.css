@@ -1,0 +1,15 @@
+.bg-img{
+    width: 303px;
+    height: 303px;
+}
+.donat{
+    width: 303px;
+    height: 303px;
+    margin: 85pt 0 0 16pt;
+    border-radius: 10px;
+}
+.blur{
+    height: 114px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+}

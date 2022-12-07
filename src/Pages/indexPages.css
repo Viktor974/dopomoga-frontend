@@ -1,0 +1,15 @@
+.homeContainer{
+    display: flex;
+}
+.content{
+    flex: 3;
+}
+.fix{
+    position: fixed;
+}
+.headerHome{
+    width: 100%;
+}
+.flexx{
+    display: flex;
+}
